@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - LightSpeed Basketball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="alert">
+            <div class="container">
+                <p class="alert-text">Free Shipping On All Orders Starting At 99.- Baht</p>
+            </div>
+        </div>
+        <div class="header-top" data-header>
+            <div class="container">
+                <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+                <div class="input-wrapper">
+                    <input type="search" class="search-field" name="search" placeholder="search product">
+                    <button class="search-submit" aria-label="Search">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball" width="179" height="176">
+                </a>
+                <div class="header-action">
+                    <button class="header-action-btn" aria-label="User">
+                        <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="header-action-btn" aria-label="favorite item">
+                        <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                        <span class="btn-badge">0</span>
+                    </button>
+                    <button class="header-action-btn" aria-label="cart item">
+                        <data value="" class="btn-text">0.00 Baht</data>
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                        <span class="btn-badge">0</span>
+                    </button>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li><a href="index.html" class="navbar-link has-after">Home</a></li>
+                        <li><a href="index.html#collection" class="navbar-link has-after">Collection</a></li>
+                        <li><a href="shop.html" class="navbar-link has-after">Shop</a></li>
+                        <li><a href="shop.html#new-arrivals" class="navbar-link has-after">Offers</a></li>
+                        <li><a href="contact.html" class="navbar-link has-after">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE NAV ===== -->
+    <div class="sidebar">
+        <div class="mobile-navbar" data-navbar>
+            <div class="wrapper">
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball" width="129" height="26">
+                </a>
+                <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
+                <li><a href="index.html#collection" class="navbar-link" data-nav-link>Collection</a></li>
+                <li><a href="shop.html" class="navbar-link" data-nav-link>Shop</a></li>
+                <li><a href="shop.html#new-arrivals" class="navbar-link" data-nav-link>Offers</a></li>
+                <li><a href="contact.html" class="navbar-link" data-nav-link>Contact</a></li>
+            </ul>
+        </div>
+        <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <div class="breadcrumb-bar">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Shop</span>
+    </div>
+
+    <!-- ===== MAIN ===== -->
+    <main class="shop-overview">
+
+        <h1 class="shop-overview-title">All Products</h1>
+        <p class="shop-overview-sub">Browse all categories</p>
+
+        <!-- Category Cards -->
+        <div class="category-hero-grid">
+            <a href="shoe.html" class="category-hero-card">
+                <img src="products/shoes/Giannis Freak 7 EP.png" alt="Basketball Shoes">
+                <div class="cat-label">
+                    <span class="cat-name">Basketball Shoes</span>
+                    <span class="cat-count">24 products</span>
+                </div>
+            </a>
+            <a href="accessories.html" class="category-hero-card">
+                <img src="products/accessories/Nike Hoops Elite.png" alt="Accessories">
+                <div class="cat-label">
+                    <span class="cat-name">Accessories</span>
+                    <span class="cat-count">18 products</span>
+                </div>
+            </a>
+            <a href="basketballs.html" class="category-hero-card">
+                <img src="products/ball/Wilson NBA Authentic Series IndoorOutdoor Basketball.png" alt="Basketballs">
+                <div class="cat-label">
+                    <span class="cat-name">Basketballs</span>
+                    <span class="cat-count">12 products</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- New Items Row -->
+        <div class="section-header" id="new-arrivals">
+            <h2>New Items</h2>
+            <a href="shoe.html">See All (10)</a>
+        </div>
+        <div class="product-row">
+            <div class="product-card" data-price="3100">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/shoes/Giannis Immortality 5.png" alt="Giannis Immortality 5" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-1" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-1" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label new">New Arrival</p>
+                    <a href="product.html" class="product-name">Giannis Immortality 5</a>
+                    <p class="product-sub">Men's Basketball Shoes</p>
+                    <div class="product-price-row"><span class="product-price">฿3,100</span></div>
+                </div>
+            </div>
+
+            <div class="product-card" data-price="5200">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/shoes/Nike S.T. Charge EP.png" alt="Nike S.T. Charge EP" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-2" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-2" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label new">New Arrival</p>
+                    <a href="product.html" class="product-name">Nike ST Charge EP</a>
+                    <p class="product-sub">Men's Basketball Shoes</p>
+                    <div class="product-price-row"><span class="product-price">฿5,200</span></div>
+                </div>
+            </div>
+
+            <div class="product-card" data-price="5200">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/shoes/Ja 3 Animal Pack EP.png" alt="Ja 3 Animal Pack EP" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-3" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-3" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label new">New Arrival</p>
+                    <a href="product.html" class="product-name">Ja 3 Animal Pack EP</a>
+                    <p class="product-sub">Men's Basketball Shoes</p>
+                    <div class="product-price-row"><span class="product-price">฿5,200</span></div>
+                </div>
+            </div>
+
+            <div class="product-card" data-price="1890">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/accessories/Nike Hoops Elite.png" alt="Nike Hoops Elite" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-4" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-4" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label new">New Arrival</p>
+                    <a href="product.html" class="product-name">Nike Hoops Elite</a>
+                    <p class="product-sub">Backpack</p>
+                    <div class="product-price-row"><span class="product-price">฿1,890</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Basketball Shoes Row -->
+        <div class="section-header">
+            <h2>Basketball Shoes</h2>
+            <a href="shoe.html">See All (24)</a>
+        </div>
+        <div class="product-row">
+            <div class="product-card" data-price="3100">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/shoes/Giannis Immortality 5.png" alt="Giannis Immortality 5" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-1" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-1" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label new">New Arrival</p>
+                    <a href="product.html" class="product-name">Giannis Immortality 5</a>
+                    <p class="product-sub">Men's Basketball Shoes</p>
+                    <div class="product-price-row"><span class="product-price">฿3,100</span></div>
+                </div>
+            </div>
+
+            <div class="product-card" data-price="3440">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/shoes/Giannis Freak 7 EP.png" alt="Giannis Freak 7 EP" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-2" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-2" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label sale">Sale</p>
+                    <a href="product.html" class="product-name">Giannis Freak 7 EP</a>
+                    <p class="product-sub">Men's Basketball Shoes</p>
+                    <div class="product-price-row">
+                        <span class="product-price sale">฿3,440</span>
+                        <span class="product-price-original">฿4,300</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-price="5990">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/shoes/Nike LeBron XXI.png" alt="Nike LeBron XXI" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-3" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-3" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label sale">Sale</p>
+                    <a href="product.html" class="product-name">Nike LeBron XXI</a>
+                    <p class="product-sub">Men's Basketball Shoes</p>
+                    <div class="product-price-row">
+                        <span class="product-price sale">฿5,990</span>
+                        <span class="product-price-original">฿7,300</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-price="6990">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/shoes/Freak 5 EP.png" alt="Nike Zoom Freak 5" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-4" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-4" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="product.html" class="product-name">Nike Zoom Freak 5</a>
+                    <p class="product-sub">Men's Basketball Shoes</p>
+                    <div class="product-price-row"><span class="product-price">฿4,900</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accessories Row -->
+        <div class="section-header">
+            <h2>Accessories</h2>
+            <a href="accessories.html">See All (18)</a>
+        </div>
+        <div class="product-row">
+            <div class="product-card" data-price="1290">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/accessories/Nike Stephen Curry White Golden State Warriors Swingman Badge Jersey - Association Edition.png" alt="Nike Stephen Curry White Golden State Warriors Swingman Badge Jersey - Association Edition" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-5" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-5" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label new">New Arrival</p>
+                    <a href="product.html" class="product-name">Nike Stephen Curry White Golden State Warriors Swingman Badge Jersey - Association Edition</a>
+                    <p class="product-sub">Jerseys</p>
+                    <div class="product-price-row"><span class="product-price">฿3,400</span></div>
+                </div>
+            </div>
+            <div class="product-card" data-price="890">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/accessories/Nike Everyday Cushioned.png" alt="Nike Everyday Cushioned" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-6" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-6" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="product.html" class="product-name">Nike Everyday Cushioned</a>
+                    <p class="product-sub">Socks (3 pairs)</p>
+                    <div class="product-price-row"><span class="product-price">฿600</span></div>
+                </div>
+            </div>
+            <div class="product-card" data-price="1890">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/accessories/Nike Hoops Elite.png" alt="Nike Hoops Elite" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-7" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-7" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label new">New Arrival</p>
+                    <a href="product.html" class="product-name">Nike Hoops Elite</a>
+                    <p class="product-sub">Backpack</p>
+                    <div class="product-price-row"><span class="product-price">฿1,890</span></div>
+                </div>
+            </div>
+            <div class="product-card" data-price="2290">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/accessories/Los Angeles Lakers Icon Edition.png" alt="Los Angeles Lakers Icon Edition" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-8" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-8" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="product.html" class="product-name">Los Angeles Lakers Icon Edition</a>
+                    <p class="product-sub">Jerseys</p>
+                    <div class="product-price-row"><span class="product-price">฿3,400</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Basketballs Row -->
+        <div class="section-header">
+            <h2>Basketballs</h2>
+            <a href="basketballs.html">See All (6)</a>
+        </div>
+        <div class="product-row">
+
+            <div class="product-card" data-price="750">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/ball/Wilson NBA Team Tribute Chicago Bulls Basketball.png" alt="Wilson NBA Team Tribute Chicago Bulls Basketball" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-9" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-9" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label new">New Arrival</p>
+                    <a href="product.html" class="product-name">Wilson NBA Team Tribute Chicago Bulls Basketball</a>
+                    <p class="product-sub">Ball</p>
+                    <div class="product-price-row"><span class="product-price">฿750</span></div>
+                </div>
+            </div>
+
+            <div class="product-card" data-price="1352">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/ball/Wilson NBA Authentic Series IndoorOutdoor Basketball.png" alt="Wilson NBA Authentic Series Indoor/Outdoor Basketball" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-10" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-10" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label sale">Sale</p>
+                    <a href="product.html" class="product-name">Wilson NBA Authentic Series Indoor/Outdoor Basketball</a>
+                    <p class="product-sub">Ball</p>
+                    <div class="product-price-row">
+                        <span class="product-price sale">฿1,352</span>
+                        <span class="product-price-original">฿1,690</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-price="1390">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/ball/Molten B33T5000 3x3.png" alt="Molten B33T5000 3x3" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-11" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-11" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-label sale">Sale</p>
+                    <a href="product.html" class="product-name">Molten B33T5000 3x3</a>
+                    <p class="product-sub">Ball</p>
+                    <div class="product-price-row">
+                        <span class="product-price sale">฿1,390</span>
+                        <span class="product-price-original">฿1,600</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-price="1090">
+                <div class="product-img-wrap">
+                    <a href="product.html" class="product-img-link"><img src="products/ball/Wilson NBA DRV Pro Streak Basketball.png" alt="Wilson NBA DRV Pro Streak Basketball" loading="lazy"></a>
+                    <div class="product-card-actions">
+                        <button class="product-action-btn favorite-btn" data-id="s-12" aria-label="Favorite"><ion-icon name="star-outline"></ion-icon></button>
+                        <button class="product-action-btn cart-btn" data-id="s-12" aria-label="Add to cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="product.html" class="product-name">Wilson NBA DRV Pro Streak Basketball</a>
+                    <p class="product-sub">Ball</p>
+                    <div class="product-price-row"><span class="product-price">฿1,090</span></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <!-- ===== SITE FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="site-footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball Shop logo" width="140" height="140">
+                </a>
+                <p>Premium basketball shoes, apparel, and gear. We guarantee the best hoop shoe on the market.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#" aria-label="TikTok"><ion-icon name="logo-tiktok"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="shoe.html">Basketball Shoes</a></li>
+                    <li><a href="apparel.html">Apparel</a></li>
+                    <li><a href="basketballs.html">Basketballs</a></li>
+                    <li><a href="shop.html">All Products</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html#collection">Collection</a></li>
+                    <li><a href="shop.html#new-arrivals">Offers</a></li>
+                    <li><a href="#">Shipping &amp; Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-context">
+                <h3>Notify</h3>
+                <p>This website is not a real basketball shop,This website is made for educational purposes only</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 LightSpeed Basketball Shop. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING PROMO BAR ===== -->
+    <div class="promo-bar">
+        <h1 class="specialOffer">Special Offer</h1>
+        <h2 class="discount">30% off for new Customers</h2>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

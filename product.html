@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike KD 17 - LightSpeed Basketball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="alert">
+            <div class="container">
+                <p class="alert-text">Free Shipping On All Orders Starting At 99.- Baht</p>
+            </div>
+        </div>
+
+        <div class="header-top" data-header>
+            <div class="container">
+                <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="input-wrapper">
+                    <input type="search" class="search-field" name="search" placeholder="search product">
+                    <button class="search-submit" aria-label="Search">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball" width="179" height="176">
+                </a>
+
+                <div class="header-action">
+                    <button class="header-action-btn" aria-label="User">
+                        <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="header-action-btn" aria-label="favorite item">
+                        <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                        <span class="btn-badge">0</span>
+                    </button>
+                    <button class="header-action-btn" aria-label="cart item">
+                        <data value="" class="btn-text">0.00 Baht</data>
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                        <span class="btn-badge">0</span>
+                    </button>
+                </div>
+
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li><a href="index.html" class="navbar-link has-after">Home</a></li>
+                        <li><a href="index.html#collection" class="navbar-link has-after">Collection</a></li>
+                        <li><a href="shop.html" class="navbar-link has-after">Shop</a></li>
+                        <li><a href="index.html#offer" class="navbar-link has-after">Offer</a></li>
+                        <li><a href="contact.html" class="navbar-link has-after">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE NAV ===== -->
+    <div class="sidebar">
+        <div class="mobile-navbar" data-navbar>
+            <div class="wrapper">
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball" width="129" height="26">
+                </a>
+                <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
+                <li><a href="index.html#collection" class="navbar-link" data-nav-link>Collection</a></li>
+                <li><a href="shop.html" class="navbar-link" data-nav-link>Shop</a></li>
+                <li><a href="index.html#offer" class="navbar-link" data-nav-link>Offer</a></li>
+                <li><a href="contact.html" class="navbar-link" data-nav-link>Contact</a></li>
+            </ul>
+        </div>
+        <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+            <a href="shop.html">Shop</a>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+            <span>Nike KD 17</span>
+        </div>
+    </div>
+
+    <!-- ===== PRODUCT DETAIL ===== -->
+    <main class="product-page">
+
+        <div class="product-container">
+
+            <!-- LEFT: Image Gallery -->
+            <div class="product-gallery">
+
+                <!-- Thumbnails -->
+                <div class="thumb-list">
+                    <button class="thumb-btn active" data-img="image/product1.webp">
+                        <img src="image/product1.webp" alt="View 1">
+                    </button>
+                    <button class="thumb-btn" data-img="image/product2.webp">
+                        <img src="image/product2.webp" alt="View 2">
+                    </button>
+                    <button class="thumb-btn" data-img="image/product3.webp">
+                        <img src="image/product3.webp" alt="View 3">
+                    </button>
+                    <button class="thumb-btn" data-img="image/product4.webp">
+                        <img src="image/product4.webp" alt="View 4">
+                    </button>
+                </div>
+
+                <!-- Main image -->
+                <div class="main-img-wrap">
+                    <img src="image/product1.webp" alt="Nike KD 17" id="mainProductImg" class="main-img">
+                    <span class="product-badge">New Arrival</span>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: Product Info -->
+            <div class="product-info-panel">
+
+                <!-- Brand & Title -->
+                <p class="product-brand">Nike</p>
+                <h1 class="product-title">Nike KD 17</h1>
+                <p class="product-subtitle">Men's Basketball Shoes</p>
+
+                <!-- Rating -->
+                <div class="product-rating">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <span class="rating-count">4.5 (128 reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <div class="product-price-block">
+                    <span class="current-price">฿4,990</span>
+                    <span class="original-price">฿6,490</span>
+                    <span class="discount-tag">-23%</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Color -->
+                <div class="option-group">
+                    <div class="option-label">
+                        Color: <strong id="selectedColor">White/Green</strong>
+                    </div>
+                    <div class="color-options">
+                        <button class="color-btn active" data-color="White/Green" style="background: #e8f0e8;" aria-label="White/Green"></button>
+                        <button class="color-btn" data-color="Black/Gold" style="background: #1a1a1a;" aria-label="Black/Gold"></button>
+                        <button class="color-btn" data-color="Navy/Red" style="background: #1a2a4a;" aria-label="Navy/Red"></button>
+                        <button class="color-btn" data-color="Grey/Orange" style="background: #888;" aria-label="Grey/Orange"></button>
+                    </div>
+                </div>
+
+                <!-- Size -->
+                <div class="option-group">
+                    <div class="option-label">
+                        Size (US): <strong id="selectedSize">Select Size</strong>
+                    </div>
+                    <div class="size-options">
+                        <button class="size-btn" data-size="7">7</button>
+                        <button class="size-btn" data-size="8">8</button>
+                        <button class="size-btn" data-size="8.5">8.5</button>
+                        <button class="size-btn" data-size="9">9</button>
+                        <button class="size-btn" data-size="9.5">9.5</button>
+                        <button class="size-btn" data-size="10">10</button>
+                        <button class="size-btn" data-size="10.5">10.5</button>
+                        <button class="size-btn disabled" data-size="11" disabled>11</button>
+                        <button class="size-btn" data-size="12">12</button>
+                        <button class="size-btn disabled" data-size="13" disabled>13</button>
+                    </div>
+                    <p class="size-note">Sold out sizes are not available</p>
+                </div>
+
+                <!-- Quantity -->
+                <div class="option-group">
+                    <div class="option-label">Quantity</div>
+                    <div class="qty-control">
+                        <button class="qty-btn" id="qtyMinus" aria-label="Decrease">
+                            <ion-icon name="remove-outline"></ion-icon>
+                        </button>
+                        <span class="qty-value" id="qtyValue">1</span>
+                        <button class="qty-btn" id="qtyPlus" aria-label="Increase">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- CTA Buttons -->
+                <div class="cta-group">
+                    <button class="btn-add-cart cart-btn" data-id="product-kd17" id="addToCartBtn">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        Add to Cart
+                    </button>
+                    <button class="btn-favorite favorite-btn" data-id="product-kd17" id="addToFavBtn">
+                        <ion-icon name="star-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <!-- Delivery Info -->
+                <div class="delivery-info">
+                    <div class="delivery-item">
+                        <ion-icon name="car-outline"></ion-icon>
+                        <span>Free shipping on orders over ฿999</span>
+                    </div>
+                    <div class="delivery-item">
+                        <ion-icon name="refresh-outline"></ion-icon>
+                        <span>30-day free returns</span>
+                    </div>
+                    <div class="delivery-item">
+                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                        <span>100% authentic guaranteed</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===== TABS: Description / Specs / Reviews ===== -->
+        <div class="product-tabs">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="specs">Specifications</button>
+                <button class="tab-btn" data-tab="reviews">Reviews (128)</button>
+            </div>
+
+            <div class="tab-content active" id="tab-description">
+                <p>The Nike KD 17 brings elite performance to the hardwood. Designed for Kevin Durant's dynamic play style, this shoe combines a low-profile build with responsive cushioning that lets you feel the court while staying explosive.</p>
+                <p>The full-length Zoom Air unit delivers impact protection and energy return, while the engineered upper wraps the foot in a secure, adaptive fit. Whether you're driving the lane or pulling up for a mid-range jumper, the KD 17 is built to perform at the highest level.</p>
+                <ul class="feature-list">
+                    <li><ion-icon name="checkmark-outline"></ion-icon> Full-length Zoom Air cushioning</li>
+                    <li><ion-icon name="checkmark-outline"></ion-icon> Engineered mesh upper for breathability</li>
+                    <li><ion-icon name="checkmark-outline"></ion-icon> Herringbone traction pattern</li>
+                    <li><ion-icon name="checkmark-outline"></ion-icon> Lightweight foam midsole</li>
+                    <li><ion-icon name="checkmark-outline"></ion-icon> Reinforced toe cap</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="tab-specs">
+                <table class="specs-table">
+                    <tr><td>Brand</td><td>Nike</td></tr>
+                    <tr><td>Model</td><td>KD 17</td></tr>
+                    <tr><td>Sport</td><td>Basketball</td></tr>
+                    <tr><td>Cushioning</td><td>Full-length Zoom Air</td></tr>
+                    <tr><td>Closure</td><td>Lace-up</td></tr>
+                    <tr><td>Upper</td><td>Engineered Mesh</td></tr>
+                    <tr><td>Outsole</td><td>Rubber - Herringbone</td></tr>
+                    <tr><td>Weight</td><td>~340g (US 10)</td></tr>
+                    <tr><td>Origin</td><td>Vietnam</td></tr>
+                    <tr><td>SKU</td><td>FJ1566-100</td></tr>
+                </table>
+            </div>
+
+            <div class="tab-content" id="tab-reviews">
+                <div class="review-summary">
+                    <div class="review-score">
+                        <span class="big-score">4.5</span>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half"></ion-icon>
+                        </div>
+                        <span>128 reviews</span>
+                    </div>
+                </div>
+
+                <div class="review-list">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <strong>James T.</strong>
+                            <div class="stars small">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="review-date">April 20, 2026</p>
+                        <p class="review-text">Best hoop shoes I've owned in years. The cushioning is incredible and the fit is locked in. Highly recommend for guards and wings.</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-top">
+                            <strong>Somchai P.</strong>
+                            <div class="stars small">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="review-date">March 14, 2026</p>
+                        <p class="review-text">Great traction and very responsive. Runs slightly narrow so go half a size up if you have wide feet.</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-top">
+                            <strong>Alex R.</strong>
+                            <div class="stars small">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="review-date">February 28, 2026</p>
+                        <p class="review-text">Lightweight and explosive. You can really feel the court which I love as a point guard. The colorway is fire too.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== RELATED PRODUCTS ===== -->
+        <section class="related-section">
+            <h2 class="related-title">You May Also Like</h2>
+            <div class="related-grid">
+
+                <div class="related-card">
+                    <a href="product.html">
+                        <div class="related-img-wrap">
+                            <img src="image/product2.webp" alt="Air Jordan 1 Low" loading="lazy">
+                        </div>
+                        <div class="related-info">
+                            <p class="related-brand">Jordan</p>
+                            <p class="related-name">Air Jordan 1 Low</p>
+                            <p class="related-price">฿5,990</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="related-card">
+                    <a href="product.html">
+                        <div class="related-img-wrap">
+                            <img src="image/product3.webp" alt="Nike LeBron XXI" loading="lazy">
+                        </div>
+                        <div class="related-info">
+                            <p class="related-brand">Nike</p>
+                            <p class="related-name">Nike LeBron XXI</p>
+                            <p class="related-price">฿3,490 <s>฿5,990</s></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="related-card">
+                    <a href="product.html">
+                        <div class="related-img-wrap">
+                            <img src="image/product4.webp" alt="Nike Zoom Freak 5" loading="lazy">
+                        </div>
+                        <div class="related-info">
+                            <p class="related-brand">Nike</p>
+                            <p class="related-name">Nike Zoom Freak 5</p>
+                            <p class="related-price">฿6,990</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="related-card">
+                    <a href="product.html">
+                        <div class="related-img-wrap">
+                            <img src="image/product5.webp" alt="Harden Vol. 8" loading="lazy">
+                        </div>
+                        <div class="related-info">
+                            <p class="related-brand">Adidas</p>
+                            <p class="related-name">Harden Vol. 8</p>
+                            <p class="related-price">฿4,290</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <!-- ===== SITE FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="site-footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball Shop logo" width="140" height="140">
+                </a>
+                <p>Premium basketball shoes, apparel, and gear. We guarantee the best hoop shoe on the market.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#" aria-label="TikTok"><ion-icon name="logo-tiktok"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="shoe.html">Basketball Shoes</a></li>
+                    <li><a href="apparel.html">Apparel</a></li>
+                    <li><a href="basketballs.html">Basketballs</a></li>
+                    <li><a href="shop.html">All Products</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html#collection">Collection</a></li>
+                    <li><a href="index.html#offer">Offers</a></li>
+                    <li><a href="#">Shipping &amp; Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Get early access to drops, restocks, and member-only discounts.</p>
+                <form class="footer-newsletter-form" data-newsletter-form>
+                    <input type="email" placeholder="Your email address" aria-label="Email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="footer-newsletter-note">No spam. Unsubscribe anytime.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 LightSpeed Basketball Shop. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING PROMO BAR ===== -->
+    <div class="promo-bar">
+        <h1 class="specialOffer">Special Offer</h1>
+        <h2 class="discount">30% off for new Customers</h2>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

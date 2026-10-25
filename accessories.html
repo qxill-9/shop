@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparel - LightSpeed Basketball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="alert">
+            <div class="container">
+                <p class="alert-text">Free Shipping On All Orders Starting At 99.- Baht</p>
+            </div>
+        </div>
+
+        <div class="header-top" data-header>
+            <div class="container">
+                <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="input-wrapper">
+                    <input type="search" class="search-field" name="search" placeholder="search product">
+                    <button class="search-submit" aria-label="Search">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball" width="179" height="176">
+                </a>
+
+                <div class="header-action">
+                    <button class="header-action-btn" aria-label="User">
+                        <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="header-action-btn" aria-label="favorite item">
+                        <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                        <span class="btn-badge">0</span>
+                    </button>
+                    <button class="header-action-btn" aria-label="cart item">
+                        <data value="" class="btn-text">0.00 Baht</data>
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                        <span class="btn-badge">0</span>
+                    </button>
+                </div>
+
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="index.html" class="navbar-link has-after">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#collection" class="navbar-link has-after">Collection</a>
+                        </li>
+                        <li>
+                            <a href="shop.html" class="navbar-link has-after">Shop</a>
+                        </li>
+                        <li>
+                            <a href="index.html#offer" class="navbar-link has-after">Offer</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="navbar-link has-after">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="mobile-navbar" data-navbar>
+            <div class="wrapper">
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball" width="129" height="26">
+                </a>
+                <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li>
+                    <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                </li>
+                <li>
+                    <a href="index.html#collection" class="navbar-link" data-nav-link>Collection</a>
+                </li>
+                <li>
+                    <a href="shop.html" class="navbar-link" data-nav-link>Shop</a>
+                </li>
+                <li>
+                    <a href="index.html#offer" class="navbar-link" data-nav-link>Offer</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+
+    <!-- ===== SIDEBAR OVERLAY (filter mobile) ===== -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <div class="breadcrumb-bar">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="shop.html">Shop</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Apparel</span>
+    </div>
+
+    <!-- ===== SHOP BODY ===== -->
+    <div class="shop-page">
+
+        <!-- SIDEBAR -->
+        <aside class="shop-sidebar" id="shopSidebar">
+
+            <div class="sidebar-close">
+                <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close filters">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <!-- Category -->
+            <div class="filter-group">
+                <div class="filter-group-title" data-filter-toggle>
+                    Category <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <ul class="filter-list">
+                    <li class="filter-item"><input type="checkbox"> Jerseys</li>
+                    <li class="filter-item"><input type="checkbox"> Shorts</li>
+                    <li class="filter-item"><input type="checkbox"> Hoodies &amp; Warm-Ups</li>
+                    <li class="filter-item"><input type="checkbox"> Compression Wear</li>
+                    <li class="filter-item"><input type="checkbox"> Socks</li>
+                </ul>
+            </div>
+
+            <!-- Brand -->
+            <div class="filter-group">
+                <div class="filter-group-title" data-filter-toggle>
+                    Brand <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <ul class="filter-list">
+                    <li class="filter-item"><input type="checkbox"> Nike</li>
+                    <li class="filter-item"><input type="checkbox"> Jordan</li>
+                    <li class="filter-item"><input type="checkbox"> Adidas</li>
+                    <li class="filter-item"><input type="checkbox"> Under Armour</li>
+                    <li class="filter-item"><input type="checkbox"> Puma</li>
+                </ul>
+            </div>
+
+            <!-- Size -->
+            <div class="filter-group">
+                <div class="filter-group-title" data-filter-toggle>
+                    Size <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <ul class="filter-list">
+                    <li class="filter-item"><input type="checkbox"> S</li>
+                    <li class="filter-item"><input type="checkbox"> M</li>
+                    <li class="filter-item"><input type="checkbox"> L</li>
+                    <li class="filter-item"><input type="checkbox"> XL</li>
+                    <li class="filter-item"><input type="checkbox"> XXL</li>
+                </ul>
+            </div>
+
+
+        </aside>
+
+        <!-- MAIN -->
+        <div class="shop-main">
+
+            <!-- Title Bar -->
+            <div class="shop-title-bar">
+                <div>
+                    <h1>Accessories</h1>
+                    <p class="count">(18 items)</p>
+                </div>
+                <div class="shop-controls">
+                    <button class="filter-toggle-btn" id="filterToggleBtn">
+                        Hide Filters <ion-icon name="options-outline"></ion-icon>
+                    </button>
+                    <div class="filter-divider"></div>
+                    <select class="sort-select" id="sortSelect">
+                        <option>Sort By: Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest</option>
+                        <option>Best Selling</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid 1 -->
+            <div class="product-grid" id="productGrid-1">
+
+                <div class="product-card" data-price="3400">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/accessories/Nike Stephen Curry White Golden State Warriors Swingman Badge Jersey - Association Edition.png" alt="Nike Stephen Curry White Golden State Warriors Swingman Badge Jersey - Association Edition" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-1" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-1" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Nike Stephen Curry White Golden State Warriors Swingman Badge Jersey - Association Edition</a>
+                        <p class="product-sub">Men's Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿3,400</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="200">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/accessories/Jordan Elite.png" alt="Jordan Elite" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-2" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-2" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Jordan Elite</a>
+                        <p class="product-sub">Crew Socks (1 Pair)</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿200</span>
+                            <span class="product-price-original">฿249</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="600">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/accessories/Nike Everyday Cushioned.png" alt="Nike Everyday Cushioned" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-3" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-3" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Nike Everyday Cushioned</a>
+                        <p class="product-sub">Crew Socks (3 Pair)</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿600</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="3400">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/accessories/Los Angeles Lakers Icon Edition.png" alt="Los Angeles Lakers Icon Edition" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-4" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-4" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Los Angeles Lakers Icon Edition</a>
+                        <p class="product-sub">Men's Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿3,400</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="3000">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/accessories/Nike Hoops Elite.png" alt="Nike Hoops Elite" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-5" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-5" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Nike Hoops Elite</a>
+                        <p class="product-sub">Backpack</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿3,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="450">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product4.webp" alt="Performance Crew Socks (3-Pack)" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-6" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-6" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Performance Crew Socks (3-Pack)</a>
+                        <p class="product-sub">Accessories</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿450</span>
+                            <span class="product-price-original">฿650</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Product Grid 2 -->
+            <div class="product-grid" id="productGrid-2">
+
+                <div class="product-card" data-price="1390">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product1.webp" alt="Away Game Jersey" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-7" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-7" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Away Game Jersey</a>
+                        <p class="product-sub">Men's Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿1,390</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="1190">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product2.webp" alt="Reversible Practice Jersey" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-8" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-8" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Reversible Practice Jersey</a>
+                        <p class="product-sub">Men's Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿1,190</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="790">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product3.webp" alt="Mesh Shorts" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-9" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-9" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Mesh Shorts</a>
+                        <p class="product-sub">Men's Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿790</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="1990">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product4.webp" alt="Full-Zip Hoodie" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-10" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-10" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Full-Zip Hoodie</a>
+                        <p class="product-sub">Men's Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿1,990</span>
+                            <span class="product-price-original">฿2,490</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="890">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product5.webp" alt="Sleeveless Training Tank" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-11" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-11" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Sleeveless Training Tank</a>
+                        <p class="product-sub">Men's Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿890</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="590">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product6.webp" alt="Shooter Sleeve" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-12" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-12" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Shooter Sleeve</a>
+                        <p class="product-sub">Accessories</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿590</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Product Grid 3 -->
+            <div class="product-grid" id="productGrid-3">
+
+                <div class="product-card" data-price="990">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product1.webp" alt="Youth Basketball Jersey" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-13" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-13" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Youth Basketball Jersey</a>
+                        <p class="product-sub">Kids' Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿990</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="690">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product2.webp" alt="Youth Basketball Shorts" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-14" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-14" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Youth Basketball Shorts</a>
+                        <p class="product-sub">Kids' Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿690</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="1690">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product3.webp" alt="Team Warm-Up Pants" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-15" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-15" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Team Warm-Up Pants</a>
+                        <p class="product-sub">Men's Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿1,690</span>
+                            <span class="product-price-original">฿2,190</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="1890">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product4.webp" alt="Quarter-Zip Pullover" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-16" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-16" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Quarter-Zip Pullover</a>
+                        <p class="product-sub">Men's Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿1,890</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="290">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product5.webp" alt="Basketball Headband (2-Pack)" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-17" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-17" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Basketball Headband (2-Pack)</a>
+                        <p class="product-sub">Accessories</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿290</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="1090">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="image/product6.webp" alt="Padded Compression Shorts" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="apparel-18" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="apparel-18" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Padded Compression Shorts</a>
+                        <p class="product-sub">Men's Apparel</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿1,090</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <!-- ===== SITE FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="site-footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball Shop logo" width="140" height="140">
+                </a>
+                <p>Premium basketball shoes, apparel, and gear. We guarantee the best hoop shoe on the market.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#" aria-label="TikTok"><ion-icon name="logo-tiktok"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="shoe.html">Basketball Shoes</a></li>
+                    <li><a href="apparel.html">Apparel</a></li>
+                    <li><a href="basketballs.html">Basketballs</a></li>
+                    <li><a href="shop.html">All Products</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html#collection">Collection</a></li>
+                    <li><a href="index.html#offer">Offers</a></li>
+                    <li><a href="#">Shipping &amp; Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-context">
+                <h3>Notify</h3>
+                <p>This website is not a real basketball shop,This website is made for educational purposes only</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 LightSpeed Basketball Shop. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING PROMO BAR ===== -->
+    <div class="promo-bar">
+        <h1 class="specialOffer">Special Offer</h1>
+        <h2 class="discount">30% off for new Customers</h2>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+    <script src="pagination.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

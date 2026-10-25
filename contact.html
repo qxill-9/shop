@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LightSpeed Basketball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="alert">
+            <div class="container">
+                <p class="alert-text">Free Shipping On All Orders Starting At 99.- Baht</p>
+            </div>
+        </div>
+        <div class="header-top" data-header>
+            <div class="container">
+                <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+                <div class="input-wrapper">
+                    <input type="search" class="search-field" name="search" placeholder="search product">
+                    <button class="search-submit" aria-label="Search">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball" width="179" height="176">
+                </a>
+                <div class="header-action">
+                    <button class="header-action-btn" aria-label="User">
+                        <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="header-action-btn" aria-label="favorite item">
+                        <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                        <span class="btn-badge">0</span>
+                    </button>
+                    <button class="header-action-btn" aria-label="cart item">
+                        <data value="" class="btn-text">0.00 Baht</data>
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                        <span class="btn-badge">0</span>
+                    </button>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li><a href="index.html" class="navbar-link has-after">Home</a></li>
+                        <li><a href="index.html#collection" class="navbar-link has-after">Collection</a></li>
+                        <li><a href="shop.html" class="navbar-link has-after">Shop</a></li>
+                        <li><a href="index.html#offer" class="navbar-link has-after">Offer</a></li>
+                        <li><a href="contact.html" class="navbar-link has-after">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="mobile-navbar" data-navbar>
+            <div class="wrapper">
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball" width="129" height="26">
+                </a>
+                <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
+                <li><a href="index.html#collection" class="navbar-link" data-nav-link>Collection</a></li>
+                <li><a href="shop.html" class="navbar-link" data-nav-link>Shop</a></li>
+                <li><a href="index.html#offer" class="navbar-link" data-nav-link>Offer</a></li>
+                <li><a href="contact.html" class="navbar-link" data-nav-link>Contact</a></li>
+            </ul>
+        </div>
+        <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+
+
+
+    <!-- ===== BREADCRUMB ===== -->
+    <div class="breadcrumb-bar">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Contact</span>
+    </div>
+
+    <!-- ===== CONTACT PAGE ===== -->
+    <main class="contact-page">
+
+        <div class="contact-header">
+            <h1>Get In Touch</h1>
+            <p>Questions about an order, a product, or just want to talk hoops? We'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info-list">
+                <div class="contact-info-item">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <div>
+                        <h3>Visit Us</h3>
+                        <p>2 Rama II Road (Soi 69),Bang Khun Thian<br>Bangkok 10150,Thailand</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <div>
+                        <h3>Call Us</h3>
+                        <a href="#">+66 000-000-0000</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <div>
+                        <h3>Email Us</h3>
+                        <a href="#">support@lightspeedbasketball.com</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <div>
+                        <h3>Hours</h3>
+                        <p>Mon&ndash;Sat: 10:00 &ndash; 20:00<br>Sunday: 11:00 &ndash; 18:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="contact-success-msg" id="contactSuccessMsg">
+                    Thanks &mdash; your message has been sent! We'll get back to you within 1 business day.
+                </div>
+
+                <div class="contact-form-row">
+                    <div>
+                        <label for="contactName">Full Name</label>
+                        <input type="text" id="contactName" name="name" placeholder="Jane Smith" required>
+                    </div>
+                    <div>
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="jane@example.com" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" name="subject" placeholder="Order question, sizing help, etc." required>
+                </div>
+
+                <div>
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="message" placeholder="How can we help?" required></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit-btn">Send Message</button>
+            </form>
+
+        </div>
+
+    </main>
+
+    <!-- ===== SITE FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="site-footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball Shop logo" width="140" height="140">
+                </a>
+                <p>Premium basketball shoes, apparel, and gear. We guarantee the best hoop shoe on the market.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#" aria-label="TikTok"><ion-icon name="logo-tiktok"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="shoe.html">Basketball Shoes</a></li>
+                    <li><a href="apparel.html">Apparel</a></li>
+                    <li><a href="basketballs.html">Basketballs</a></li>
+                    <li><a href="shop.html">All Products</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html#collection">Collection</a></li>
+                    <li><a href="index.html#offer">Offers</a></li>
+                    <li><a href="#">Shipping &amp; Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-context">
+                <h3>Notify</h3>
+                <p>This website is not a real basketball shop,This website is made for educational purposes only</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 LightSpeed Basketball Shop. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING PROMO BAR ===== -->
+    <div class="promo-bar">
+        <h1 class="specialOffer">Special Offer</h1>
+        <h2 class="discount">30% off for new Customers</h2>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

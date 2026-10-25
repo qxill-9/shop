@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - LightSpeed Basketball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="alert">
+            <div class="container">
+                <p class="alert-text">Free Shipping On All Orders Starting At 99.- Baht</p>
+            </div>
+        </div>
+
+        <div class="header-top" data-header>
+            <div class="container">
+                <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="input-wrapper">
+                    <input type="search" class="search-field" name="search" placeholder="search product">
+                    <button class="search-submit" aria-label="Search">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball" width="179" height="176">
+                </a>
+
+                <div class="header-action">
+                    <button class="header-action-btn" aria-label="User">
+                        <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="header-action-btn" aria-label="favorite item">
+                        <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                        <span class="btn-badge">0</span>
+                    </button>
+                    <button class="header-action-btn" aria-label="cart item">
+                        <data value="" class="btn-text">0.00 Baht</data>
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                        <span class="btn-badge">0</span>
+                    </button>
+                </div>
+
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="index.html" class="navbar-link has-after">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#collection" class="navbar-link has-after">Collection</a>
+                        </li>
+                        <li>
+                            <a href="shop.html" class="navbar-link has-after">Shop</a>
+                        </li>
+                        <li>
+                            <a href="shop.html#new-arrivals" class="navbar-link has-after">Offers</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="navbar-link has-after">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="mobile-navbar" data-navbar>
+            <div class="wrapper">
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball" width="129" height="26">
+                </a>
+                <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li>
+                    <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                </li>
+                <li>
+                    <a href="index.html#collection" class="navbar-link" data-nav-link>Collection</a>
+                </li>
+                <li>
+                    <a href="shop.html" class="navbar-link" data-nav-link>Shop</a>
+                </li>
+                <li>
+                    <a href="index.html#offer" class="navbar-link" data-nav-link>Offer</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+
+    <!-- ===== SIDEBAR OVERLAY (filter mobile) ===== -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <div class="breadcrumb-bar">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="shop.html">Shop</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Basketball Shoes</span>
+    </div>
+
+    <!-- ===== SHOP BODY ===== -->
+    <div class="shop-page">
+
+        <!-- SIDEBAR -->
+        <aside class="shop-sidebar" id="shopSidebar">
+
+            <div class="sidebar-close">
+                <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close filters">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <!-- Brand -->
+            <div class="filter-group">
+                <div class="filter-group-title" data-filter-toggle>
+                    Brand <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <ul class="filter-list">
+                    <li class="filter-item"><input type="checkbox"> Nike</li>
+                    <li class="filter-item"><input type="checkbox"> Jordan</li>
+                    <li class="filter-item"><input type="checkbox"> Adidas</li>
+                    <li class="filter-item"><input type="checkbox"> Under Armour</li>
+                    <li class="filter-item"><input type="checkbox"> New Balance</li>
+                    <li class="filter-item"><input type="checkbox"> Puma</li>
+                </ul>
+            </div>
+
+            <!-- change size to price range --> <!-- Size -->
+            <div class="filter-group">
+                <div class="filter-group-title" data-filter-toggle>
+                    Price <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <ul class="filter-list">
+                    <li class="filter-item"><input type="checkbox"> US 7 &nbsp;<span style="color:var(--gray-web)">/ EU 40</span></li>
+                    <li class="filter-item"><input type="checkbox"> US 8 &nbsp;<span style="color:var(--gray-web)">/ EU 41</span></li>
+                    <li class="filter-item"><input type="checkbox"> US 8.5 <span style="color:var(--gray-web)">/ EU 42</span></li>
+                    <li class="filter-item"><input type="checkbox"> US 9 &nbsp;<span style="color:var(--gray-web)">/ EU 42.5</span></li>
+                    <li class="filter-item"><input type="checkbox"> US 9.5 <span style="color:var(--gray-web)">/ EU 43</span></li>
+                    <li class="filter-item"><input type="checkbox"> US 10 <span style="color:var(--gray-web)">/ EU 44</span></li>
+                    <li class="filter-item"><input type="checkbox"> US 10.5 <span style="color:var(--gray-web)">/ EU 44.5</span></li>
+                    <li class="filter-item"><input type="checkbox"> US 11 <span style="color:var(--gray-web)">/ EU 45</span></li>
+                    <li class="filter-item"><input type="checkbox"> US 12 <span style="color:var(--gray-web)">/ EU 46</span></li>
+                    <li class="filter-item"><input type="checkbox"> US 13 <span style="color:var(--gray-web)">/ EU 47</span></li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- MAIN -->
+        <div class="shop-main">
+
+            <!-- Title Bar -->
+            <div class="shop-title-bar">
+                <div>
+                    <h1>Basketball Shoes</h1>
+                    <p class="count">(24 items)</p>
+                </div>
+                <div class="shop-controls">
+                    <button class="filter-toggle-btn" id="filterToggleBtn">
+                        Hide Filters <ion-icon name="options-outline"></ion-icon>
+                    </button>
+                    <div class="filter-divider"></div>
+                    <select class="sort-select" id="sortSelect">
+                        <option>Sort By: Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest</option>
+                        <option>Best Selling</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid 1 -->
+            <div class="product-grid" id="productGrid-1">
+
+                <!-- Card 1 -->
+                <div class="product-card" data-price="3760">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Ja 3 Light Show EP.png" alt="Nike Ja 3" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-1" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-1" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Nike Ja 3</a>
+                        <p class="product-sub">Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿3,760</span>
+                            <span class="product-price-original">฿4,700</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card" data-price="3100">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Giannis Immortality 5.png" alt="Giannis Immortality 5" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-2" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-2" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Giannis Immortality 5</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿3,100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card" data-price="3490">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Nike LeBron XXI.png" alt="Nike LeBron XXI" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-3" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-3" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Nike LeBron XXI</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿5,990</span>
+                            <span class="product-price-original">฿7,300</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card" data-price="4900">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Freak 5 EP.png" alt="Nike Zoom Freak 5" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-4" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-4" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Nike Zoom Freak 5</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿4,900</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="product-card" data-price="7300">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/LeBron XXIII PER EP.png" alt="Harden Vol. 8" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-5" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-5" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">LeBron XXIII PER EP</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿7,300</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="product-card" data-price="2990">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/UNDER ARMOUR Curry 12 'Dub Nation'.png" alt="Curry 12" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-6" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-6" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Curry 12</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿2,990</span>
+                            <span class="product-price-original">฿5,990</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Product Grid 2 -->
+            <div class="product-grid" id="productGrid-2">
+
+                <!-- Card 1 -->
+                <div class="product-card" data-price="7500">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Nike G.T. Cut 4 EP.png" alt="Nike G.T. Cut 4 EP" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-7" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-7" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Nike G.T. Cut 4 EP</a>
+                        <p class="product-sub">Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿7,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card" data-price="5200">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Sabrina 4 EP.png" alt="Sabrina 4 EP" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-8" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-8" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Sabrina 4 EP</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿5,200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card" data-price="3640">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Luka 5.png" alt="Luka 5" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-9" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-9" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Luka 5</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿3,640</span>
+                            <span class="product-price-original">฿5,200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card" data-price="3400">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Nike S.T. Glow EP.png" alt="Nike S.T. Glow EP" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-10" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-10" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Nike S.T. Glow EP</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿3,400</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="product-card" data-price="5800">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/KD19 EP.png" alt="KD19 EP" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-11" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-11" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">KD19 EP</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿5,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="product-card" data-price="3795">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Nike G.T. Hustle 3.png" alt="Nike G.T. Hustle 3" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-12" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-12" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Nike G.T. Hustle 3</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿3,795</span>
+                            <span class="product-price-original">฿6,900</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Product Grid 3 -->
+            <div class="product-grid" id="productGrid-3">
+
+                <!-- Card 1 -->
+                <div class="product-card" data-price="3000">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Giannis Immortality 4 EP.png" alt="Giannis Immortality 4 EP" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-13" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-13" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Giannis Immortality 4 EP</a>
+                        <p class="product-sub">Basketball Shoes</p>
+                        <div class="product-price-row"><span class="product-price">฿3,000</span></div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card" data-price="5790">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Shai 001.png" alt="Shai 001" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-14" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-14" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Shai 001</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿5,790</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card" data-price="5700">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/KD 18.png" alt="KD 18" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-15" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-15" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">KD 18</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿5,700</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card" data-price="6990">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Kobe 8 Protro.avif" alt="Kobe 8 Protro" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-16" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-16" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Kobe 8 Protro</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿6,990</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="product-card" data-price="5800">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Harden Vol. 10.png" alt="Harden Vol. 10" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-17" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-17" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Harden Vol. 10</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿5,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="product-card" data-price="3990">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/ANTA KAI 2.png" alt="ANTA KAI 2" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-18" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-18" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">ANTA KAI 2</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿3,990</span>
+                            <span class="product-price-original">฿4,990</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Product Grid 4 -->
+            <div class="product-grid" id="productGrid-4">
+
+                <!-- Card 1 -->
+                <div class="product-card" data-price="4990">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/ANTA KAI 3.png" alt="ANTA KAI 3" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-19" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-19" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">ANTA KAI 3</a>
+                        <p class="product-sub">Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿4,990</span>
+                            <span class="product-price-original">฿5,900</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card" data-price="2580">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Adidas D.O.N. Issue 7.png" alt="Adidas D.O.N. Issue 7" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-20" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-20" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Adidas D.O.N. Issue 7</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿2,580</span>
+                            <span class="product-price-original">฿4,300</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card" data-price="3490">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Nike Book 2.png" alt="Nike Book 2" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-21" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-21" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">Nike Book 2</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿3,490</span>
+                            <span class="product-price-original">฿5,990</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card" data-price="5200">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Nike S.T. Charge EP.png" alt="Nike S.T. Charge EP" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-22" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-22" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product.html" class="product-name">Nike S.T. Charge EP</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price">฿5,200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="product-card" data-price="3760">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/Nike G.T. Cut 3 EP.png" alt="Nike G.T. Cut 3 EP" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-23" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-23" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <p class="product-label new">New Arrival</p>
+                        <a href="product.html" class="product-name">Nike G.T. Cut 3 EP</G></a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿3,760</span>
+                            <span class="product-price-original">฿4,700</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="product-card" data-price="3920">
+                    <div class="product-img-wrap">
+                        <a href="product.html" class="product-img-link"><img src="products/shoes/MB.04 Phoenix.png" alt="MB.04 Phoenix" loading="lazy"></a>
+                        <div class="product-card-actions">
+                            <button class="product-action-btn favorite-btn" data-id="shoe-24" aria-label="Favorite">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </button>
+                            <button class="product-action-btn cart-btn" data-id="shoe-24" aria-label="Add to cart">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-label sale">Sale</p>
+                        <a href="product.html" class="product-name">MB.04 Phoenix</a>
+                        <p class="product-sub">Men's Basketball Shoes</p>
+                        <div class="product-price-row">
+                            <span class="product-price sale">฿3,920</span>
+                            <span class="product-price-original">฿5,600</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <!-- ===== SITE FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="site-footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="image/logo band.png" alt="LightSpeed Basketball Shop logo" width="140" height="140">
+                </a>
+                <p>Premium basketball shoes, apparel, and gear. We guarantee the best hoop shoe on the market.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#" aria-label="TikTok"><ion-icon name="logo-tiktok"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="shoe.html">Basketball Shoes</a></li>
+                    <li><a href="apparel.html">Apparel</a></li>
+                    <li><a href="basketballs.html">Basketballs</a></li>
+                    <li><a href="shop.html">All Products</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html#collection">Collection</a></li>
+                    <li><a href="index.html#offer">Offers</a></li>
+                    <li><a href="#">Shipping &amp; Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-context">
+                <h3>Notify</h3>
+                <p>This website is not a real basketball shop,This website is made for educational purposes only</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 LightSpeed Basketball Shop. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING PROMO BAR ===== -->
+    <div class="promo-bar">
+        <h1 class="specialOffer">Special Offer</h1>
+        <h2 class="discount">30% off for new Customers</h2>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+    <script src="pagination.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
